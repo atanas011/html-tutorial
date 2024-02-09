@@ -1,0 +1,52 @@
+html {
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #333;
+    color: whitesmoke;
+}
+
+h2 {
+    color: burlywood;
+}
+
+h3 {
+    color: darkgoldenrod;
+}
+
+li,
+dt,
+dd {
+    color: lightcoral;
+}
+
+a {
+    color: aqua;
+    text-decoration: none;
+}
+
+a:visited {
+    color: aquamarine;
+}
+
+a:hover,
+a:active {
+    color: mediumaquamarine;
+}
+
+summary {
+    cursor: pointer;
+}
+
+table,
+tr,
+th,
+td,
+caption {
+    border: 1px solid bisque;
+    border-collapse: collapse;
+    padding: .5rem;
+    font-family: monospace;
+}
