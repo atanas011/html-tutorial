@@ -1,52 +1,37 @@
 html {
-    font-size: 15px;
+    font-size: 20px;
+    background-color: #111;
     font-family: sans-serif;
 }
 
 body {
     background-color: #333;
     color: whitesmoke;
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
-h2 {
-    color: burlywood;
-}
-
-h3 {
-    color: darkgoldenrod;
-}
-
-li,
-dt,
-dd {
-    color: lightcoral;
-}
-
-a {
-    color: aqua;
-    text-decoration: none;
-}
-
+a,
 a:visited {
-    color: aquamarine;
+    color: rgb(10, 240, 10);
+    text-decoration: none;
 }
 
 a:hover,
 a:active {
-    color: mediumaquamarine;
+    color: yellow;
 }
 
 summary {
     cursor: pointer;
 }
 
-table,
-tr,
 th,
 td,
 caption {
     border: 1px solid bisque;
-    border-collapse: collapse;
-    padding: .5rem;
     font-family: monospace;
+    padding: .5rem;
 }

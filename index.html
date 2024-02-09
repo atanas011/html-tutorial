@@ -1,267 +1,115 @@
-<!-- https://validator.w3.org/#validate_by_upload -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="html5.png" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-    <title>HTML Tutorial</title>
+    <title>The Pljeka Shop</title>
 </head>
 
 <body>
 
     <header>
-        <h1>I am heading 1</h1>
-        <hr>
+        <h1>Welcome to The Pljeka Shop</h1>
+
         <nav aria-label="primary-nav">
-            <ul>
-                <li><a href="#article1">Article 1</a></li>
-                <li><a href="#article2">Article 2</a></li>
-                <li><a href="#article3">Article 3</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
+            <p>&nbsp;&nbsp;&nbsp;
+                <a href="#about">About <abbr title="The Pljeka Shop">PS</abbr></a>&nbsp;&nbsp;&nbsp;
+                <a href="#menu">Our Menu</a>&nbsp;&nbsp;&nbsp;
+                <a href="hours.html">Store Hours</a>&nbsp;&nbsp;&nbsp;
+                <a href="contact.html">Contact Us</a>
+            </p>
         </nav>
+
+        <figure>
+            <img src="img/pljeka_obrok.jpg" alt="pljeka_obrok" title="Hot Pljeka!" width="400" height="225">
+            <figcaption>Pljeka To Sit...</figcaption>
+        </figure>
+
     </header>
     <hr>
 
     <main>
-        <article id="article1"> <!-- aria-label, article, section, aside, scope etc. are for semantics -->
-            <h2>I am heading 2 in article 1</h2>
-            <p>I am paragraph</p>
 
-            <section>
-                <h3>I am heading 3 in section</h3>
-                <p><strong>I am paragraph and strong</strong></p>
-                <img src="img/flower.jpg" alt="flower" title="Beautiful flower" width="449" height="300">
-            </section>
+        <article id="about">
+            <h2>About <abbr title="The Pljeka Shop">PS</abbr></h2>
+            <p>The Pljeka Shop was founded in 2024. It was built from a <strong>love
+                    of pljekas</strong> 🍔🍔🍔.<br>We hope our shop adds a unique and interesting place to our borough.
+            </p> <!-- https://emojipedia.org/hamburger -->
 
-            <section>
-                <h3>I am heading 3 in section</h3>
-                <p>I am paragraph and contain <abbr title="abbreviation">abbr</abbr></p>
+            <aside>
+                <h3>Did You Know?</h3>
+                <details>
+                    <summary>What was the biggest pljeka ever made?</summary>
+                    <p>Pljeka for Guinness from Leskovac, weighing 67.2 kilograms.<br>(Source:
+                        <cite><a target="_blank"
+                                href="https://rtv.rs/sr_lat/zivot/zanimljivosti/pljeskavica-za-ginisa-iz-leskovca-teska-67-2-kilograma_1368754.html">
+                                RTV</a></cite>)
+                    </p>
+                </details>
+            </aside>
 
-                <ul>
-                    <li>I am list item in unordered list</li>
-                    <li>I am list item in unordered list</li>
-                    <li>I am list item in unordered list</li>
-                    <!-- li*10 > Enter -->
-                </ul>
-
-                <aside>
-                    <details>
-                        <summary>This is <mark>marked summary</mark> in aside</summary>
-                        <p>These are details</p>
-                    </details>
-                </aside>
-
-            </section>
         </article>
         <hr>
 
-        <article id="article2">
-            <h2><em>I am heading 2 and em in article 2</em></h2>
+        <article id="menu">
+            <h2>Our Menu</h2>
 
-            <section>
-                <h3>I am heading 3 in section</h3>
+            <table>
+                <caption>Our Pljekas</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Pljeka</th>
+                        <th scope="col"><abbr title="Quantity">Qty</abbr></th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" rowspan="3">Regular</th>
+                        <td>1</td>
+                        <td>$1.50</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>$2.50</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>$3.50</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" rowspan="3">Large</th>
+                        <td>1</td>
+                        <td>$2.00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>$3.50</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>$5.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Fries & Salad $2</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br>
 
-                <figure>
-                    <img src="img/trooper.jpg" alt="trooper" title="Stormtrooper" width="449" height="300"
-                        loading="lazy">
-                    <figcaption>So hot...</figcaption>
-                </figure>
-
-                <p>This is my address:</p>
-                <address>Unska 1, 11000 Beograd, Srbija</address>
-
-            </section>
-
-            <section>
-                <h3>I am heading 3 in section</h3>
-
-                <a href="https://www.w3schools.com/tags/tag_a.asp" target="_blank">I am hyperlink</a>
-
-                <ol>
-                    <li>
-                        <p>I am paragraph in list item in ordered list</p>
-                    </li>
-                    <li>
-                        <p>I am paragraph in list item in ordered list</p>
-                    </li>
-                    <li>
-                        <p>I am paragraph in list item in ordered list</p>
-                    </li>
-                </ol>
-
-            </section>
-        </article>
-        <hr>
-
-        <article id="article3">
-            <h2>I am heading 2 in article 3</h2>
-
-            <section>
-                <h3>I am heading 3 in section</h3>
-
-                <figure>
-                    <img src="img/snail.jpg" alt="snail" title="Baby Snail" width="300" height="300" loading="lazy">
-                    <figcaption>Slowly...</figcaption>
-                </figure>
-
-                <dl>
-                    <dt>I am description term in description list</dt>
-                    <dd>I am description details in description list</dd>
-                    <dt>I am description term in description list</dt>
-                    <dd>I am description details in description list</dd>
-                </dl>
-                <br>
-
-                <table>
-                    <caption>I am caption</caption>
-                    <thead>
-                        <tr>
-                            <th>&nbsp;</th>
-                            <th scope="col">I am table header in thead</th>
-                            <th scope="col">Me too</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">I am th in tbody</th>
-                            <td>I am table data in tbody</td>
-                            <td>Me too</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">I am th in tbody</th>
-                            <td>I am table data in tbody</td>
-                            <td>Me too</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">I am th in tbody</th>
-                            <td rowspan="2">I am table data in tbody</td>
-                            <td>Me too</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">I am th in tbody</th>
-                            <td>Me too</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="3">I am table data in tfoot</td>
-                        </tr>
-                    </tfoot>
-                </table>
-                <br>
-
-            </section>
-        </article>
-        <hr>
-
-        <article id="contact">
-            <h2>Contact Me</h2>
-
-            <form action="https://httpbin.org/get" method="get">
-
-                <fieldset>
-                    <legend>Personal Info</legend>
-                    <p>
-                        <label for="firstName">First Name:</label>
-                        <input type="text" name="firstName" id="firstName" required autofocus>
-                    </p>
-                    <p>
-                        <label for="lastName">Last Name:</label>
-                        <input type="text" name="lastName" id="lastName" required>
-                    </p>
-                    <p>
-                        <label for="password">Password:</label>
-                        <input type="password" name="password" id="password" required>
-                    </p>
-                    <p>
-                        <label for="phone">Phone:</label>
-                        <input type="tel" name="phone" id="phone" placeholder="0601234567" pattern="[0-9]{3}[0-9]{7}"
-                            required>
-                    </p>
-                </fieldset>
-                <br>
-
-                <fieldset>
-                    <legend>Favorites</legend>
-                    <p>
-                        <label for="decade">Favorite Decade:</label>
-                        <input type="number" name="decade" id="decade" min="1950" max="2020" value="1980" step="10">
-                    </p>
-                    <p>
-                        <label for="beverage">Favorite Beverage:</label>
-                        <select name="beverage" id="beverage" size="5" multiple>
-                            <optgroup label="Coffees">
-                                <option value="Espresso">Espresso</option>
-                                <option value="Homemade Coffe" selected>Homemade</option>
-                                <option value="Iced Coffee">Iced</option>
-                            </optgroup>
-                            <optgroup label="Herbal Teas">
-                                <option value="Chamomile Tea">Chamomile</option>
-                                <option value="Linden Tea">Linden</option>
-                                <option value="Mint Tea">Mint</option>
-                                <option value="Rose Hip Tea">Rose Hip</option>
-                            </optgroup>
-                            <option value="Other">Other</option>
-                        </select>
-                    </p>
-                    <p>
-                        <label for="beer">Favorite Beer:</label>
-                        <input name="beer" id="beer" list="beer-list">
-                        <datalist id="beer-list">
-                            <option value="Erdinger">
-                            <option value="Hoegaarden">
-                            <option value="Lav Premium">
-                            <option value="Paulaner">
-                            <option value="Staropramen">
-                            <option value="Other">
-                        </datalist>
-                    </p>
-                    <p>
-                        Favorite food:
-                        <input type="radio" name="food" id="pljeka" value="Pljeka">
-                        <label for="pljeka">Pljeka</label>
-                        <input type="radio" name="food" id="sarma" value="Sarma">
-                        <label for="sarma">Sarma</label>
-                        <input type="radio" name="food" id="otherFood" value="Other">
-                        <label for="otherFood">Other</label>
-                    </p>
-                    <p>
-                        Do you have pets?
-                        <input type="checkbox" name="pets" id="dog" value="Dog">
-                        <label for="dog">Dog</label>
-                        <input type="checkbox" name="pets" id="cat" value="Cat">
-                        <label for="cat">Cat</label>
-                        <input type="checkbox" name="pets" id="fish" value="Fish">
-                        <label for="fish">Fish</label>
-                        <input type="checkbox" name="pets" id="otherPet" value="Other">
-                        <label for="otherPet">Other</label>
-                    </p>
-                </fieldset>
-                <br>
-
-                <fieldset>
-                    <legend>Send Me A Note</legend>
-                    <label for="message">Your message:</label>
-                    <br>
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                </fieldset>
-                <br>
-
-                <button type="submit">Submit</button>
-                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
-                <button type="reset">Reset</button>
-            </form>
+            <p><a href="#">Back to Top &uarr;</a></p>
 
         </article>
+
     </main>
     <hr>
 
     <footer>
-        <p>&#9734;&#9734;&#9734; <a href="about.html">5fingered sloth</a> &#9734;&#9734;&#9734;</p>
-        <p><a href="#">Back to Top &uarr;</a></p>
+        <p>Copyright &copy; 2024 The Pljeka Shop</p>
     </footer>
 
 </body>
